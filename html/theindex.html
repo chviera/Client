@@ -6,18 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    
     <link rel= "stylesheet" href="../css/bootstrap.min.css">
+    <link rel= "stylesheet" href="../js/jquery-3.6.1.min.js">
+    <link rel= "stylesheet" href="../js/bootstrap.min.js">
     <link rel= "stylesheet" href= "../css/styles.css"> 
     <link href= 'https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
     <header>
-        <nav id="header-nav" class="navbar navbar-default">
+        <nav id="header-nav" class="navbar-nav">
+            <!-- Div container is too tall. Find a way to shrink size -->
             <div class="container">
                 <div class="navbar-header">
-                    <a href="index.html" class="">
+                    <a href="index.html" class="float-start d-none d-md-block">
                         <div id="logo-img" alt="logo image"></div>
                     </a>
+
+<!------------------ Company Information Start ------------------>
+                    <div class="navbar-brand">
+                        <a href="index.html"> 
+                            <h1> David Chu's China Bistro </h1> 
+                        </a>
+                        
+                        <p>
+                            <img src="../images/star-k-logo.png" alt="Kosher Certification">
+                            <span> Kosher Certified </span>
+                        </p> 
+                    </div>
+<!------------------ Company Information End ------------------>
+
+                    <div id="nav-links" class="position-relative">
+
+<!------------------ Navigation Menu START ------------------>
+                        
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light float-end">
+                        
+                            
+    <!------------------ Collapsible Button practice on SMALL Screens START ------------------>
+                            
+                                <button id="collapse-button"
+                                    class="navbar-toggler collapsed position-relative" 
+                                    type="button" 
+                                    data-toggle="collapse" 
+                                    data-target="#collapsable-nav" 
+                                    aria-controls="collapsable-nav" 
+                                    aria-expanded="false" 
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                 </button>
+                            
+
+    <!------------------ Collapsible Button practice on SMALL Screens END ------------------>
+
+                            <div id="collapsable-nav" class="collapse navbar-collapse">
+                                <ul id="nav-list" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="menu-categories.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                                 width="" 
+                                                 height="24" 
+                                                 fill="currentColor" 
+                                                 class="bi bi-book" 
+                                                 viewBox="0 0 16 16">
+                                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                            </svg>
+                                            <br class="hidden-xs"> 
+                                                <p>Menu</p> 
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                                 width="" 
+                                                 height="24" 
+                                                 fill="currentColor" 
+                                                 class="bi bi-info-circle-fill" 
+                                                 viewBox="0 0 16 16">
+                                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                            </svg>
+                                            <br class="hidden-xs">
+                                                <p>About</p> 
+                                        </a>
+                                        
+                                    </li>
+
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" 
+                                                 width="" height="24" fill="currentColor" 
+                                                 class="bi bi-patch-check-fill" 
+                                                 viewBox="0 0 16 16">
+                                                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                            </svg>
+                                            <br class="hidden-xs"> 
+                                                <p>Awards</p> 
+                                        </a>
+                                    </li>
+
+                                    <li id="phone" class="">
+                                        <a class="nav-link" href="tel:410-602-5008">
+                                            <span> 410-602-5008</span>
+                                        </a>
+                                        <div>* We Deliver</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav> 
+                    </div>
                 </div>
             </div>
         </nav>

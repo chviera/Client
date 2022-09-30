@@ -1,16 +1,33 @@
 body {
     font-size: 16px;
     color: #fff;
-    background-color: red;
+    background-color: #951c49;
     font-family: 'Oxygen', sans-serif;
 }
 
-/**  HEADER **/
+/*------------------ header-nav ------------------*/
 #header-nav {
-    background-color: #f6b319;
+
+    background-color: yellow;
     border-radius: 0px;
     border: 0px;
+    margin: 0px;
+    padding: 0px;
+    /*below height will make header-nav occupy 20% of the viewport
+    Need to find i way to wrap closer to David Chu's text at smaller
+    screen sizes*/
+    /* height: 20vh; */
 }
+
+
+/*------------------ navbar-link positioning to top right using relative positioning ------------------*/
+
+#nav-links{
+    top:-110px;
+    
+}
+
+/*------------------ logo dimension and source ------------------*/
 
 #logo-img {
     background: url('../images/restaurant-logo_large.png') no-repeat;
@@ -18,3 +35,90 @@ body {
     height: 150px;
     margin: 10px 15px 10px 0px;
 }
+
+/*------------------ navbar-brand ------------------*/
+
+.navbar-brand{
+    padding-top: 25px;
+}
+
+.navbar-brand h1 { /*Restaurant Name*/
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a { /*Removes underline from link*/
+    text-decoration: none;
+}
+
+.navbar-brand p { /*Kosher Certified text*/
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span { /*align kosher text to kosher image*/
+    vertical-align: middle;
+}
+
+.navbar-header button.navbar-toggler, .navbar-header .icon-bar {
+    border:1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggler{
+    clear: both;
+    margin-top: 10px;
+}
+
+/*------------------ nav-list ------------------*/
+
+#nav-list {
+    margin-top: 10px;
+}
+
+#nav-list a {
+    color: #951c49;
+}
+
+#nav-list a:hover {
+    background: #e7e7e7;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+#nav-list p {
+    padding-top: 5px;
+}
+
+/*------------------ phone ------------------*/
+#phone {
+    margin-top: -10px;
+}
+
+#phone a { /*Phone number*/
+    text-align: right;
+    padding-bottom: 0;
+}
+
+#phone div { /*We Deliver*/
+    color: #557c3e;
+    text-align: right;
+    padding-right: 10px;
+    font-size: .9em;
+}
+
+/* #collapse-button {
+top: 14px;
+} */
+
+
